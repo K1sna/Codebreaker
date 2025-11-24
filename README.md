@@ -1,7 +1,7 @@
 # Codebreaker: Dynamic Extraction Attacks on Code Language Models
 
-![Codebreaker Framework](figs/methods_1.png)
-![Codebreaker Framework](figs/methods_2.png)
+![Codebreaker Framework](paper/methods_1.png)
+![Codebreaker Framework](paper/methods_2.png)
 
 > **Figure**: Overview of the Codebreaker framework for dynamic extraction attacks on code language models.
 
@@ -157,7 +157,7 @@ Each line contains a JSON object:
 - `PI_{round}.json`: Extracted personally identifiable information
 - `eval_{round}_labeled.json`: GitHub search results with repository labels
 
-![Codebreaker Framework](figs/intro2.png)
+![Codebreaker Framework](paper/intro2.png)
 
 ## Ethical Considerations ⚠️ 
 
