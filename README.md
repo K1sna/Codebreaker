@@ -7,7 +7,7 @@
 
 With the rapid adoption of LLM-based code assistants to enhance programming experiences, concerns over extraction attacks targeting private training data have intensified. These attacks specifically aim to extract Personal Information (PI) embedded within the training data of code generation models (CodeLLMs). Existing methods, using either manual or semi-automated techniques, have successfully extracted sensitive data from these CodeLLMs. However, the limited amount of data currently retrieved by extraction attacks risks significantly underestimating the true extent of training data leakage. In this paper, we propose an automatic PI data extraction attack framework against LLM-based code assistants, named Codebreaker. This framework is built on two core components: (i) the introduction of semantic entropy, which evaluates the likelihood of a prompt triggering the model to respond with training data; and (ii) an automatic dynamic mutation mechanism that seamlessly integrates with Codebreaker, reinforcing the iterative process across the framework and promoting greater interconnection between different PI elements within a single response. This boosts reasoning diversity, model memorization, and finally attack performance.
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 Codebreaker/
@@ -28,7 +28,7 @@ Codebreaker/
     └── corpus.txt             # Corpus for mutation operations
 ```
 
-## 🔬 Methodology
+## Methodology
 
 ### Codebreaker Framework
 
@@ -51,7 +51,7 @@ The attack employs a GA-like/fuzzing-like pipeline to evolve a population of pro
    - MMD threshold: $\text{MMD}(P_t, P_{t-1}) > \lambda$
    - Maximum generations: $t > T_{max}$
 
-## Installation 📦
+## Installation
 
 ### Dependencies
 
@@ -128,7 +128,7 @@ tokens = [
 ]
 ```
 
-## 📊 Output Format
+## Output Format
 
 ### Evolution Data (`data/{mode}/evol{round}.jsonl`)
 
@@ -159,7 +159,7 @@ Each line contains a JSON object:
 
 ![Codebreaker Framework](figs/intro2.png)
 
-## ⚠️ Ethical Considerations
+## Ethical Considerations ⚠️ 
 
 1. **Research Purpose Only**: This project is intended solely for security research and model evaluation
 2. **Responsible Disclosure**: Do not use for malicious purposes or unauthorized data extraction
@@ -167,7 +167,7 @@ Each line contains a JSON object:
 4. **Privacy Protection**: Handle extracted PII according to applicable data protection regulations
 5. **Model Access**: Only test models you have permission to evaluate
 
-## 📄 Citation
+## Citation
 
 If you use this code in your research, please cite:
 
@@ -182,7 +182,7 @@ If you use this code in your research, please cite:
 }
 ```
 
-## 📝 License
+## License
 
 This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)** - see the [LICENSE](LICENSE) file for details.
 

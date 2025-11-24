@@ -49,7 +49,7 @@ model_tmp/
 plots/
 *.png
 !figs/*.png
-*.pdf
+.pdf
 !figs/*.pdf
 
 # Logs
