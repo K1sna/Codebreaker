@@ -49,8 +49,10 @@ model_tmp/
 plots/
 *.png
 !figs/*.png
+!paper/*.png
 .pdf
 !figs/*.pdf
+!paper/*.pdf
 
 # Logs
 *.log
